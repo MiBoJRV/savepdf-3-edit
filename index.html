@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/pdf-128.ico">
+    <title>Editable Content</title>
+    <script src="js/jspdf.umd.min.js"></script>
+    <script src="js/html2canvas.min.js"></script>
+    <script src="js/script1.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="styles/styles.css"/>
+</head>
+<body>
+<div class="content" id="editableContent">
+    <div class="page page_1" id="page1">
+        <div class="background">
+            <img src="images/a4_1-1.png" alt="banner" width="100%">
+        </div>
+    </div>
+    <div class="page page_2" id="page2">
+        <div class="page_content-wrap">
+            <div class="page_content">
+                <div class="block_1 report">
+                    <h2>reported by</h2>
+                    <div class="table">
+                        <div class="table_content-1">
+                            <div class="block">
+                                <p>First Name:</p>
+                                <p><span contenteditable="true">George</span></p>
+                            </div>
+                            <div class="block">
+                                <p>Position:</p>
+                                <p><span contenteditable="true">Chief Account Executive</span></p>
+                            </div>
+                            <div class="block">
+                                <p>Address:</p>
+                                <p><span contenteditable="true">150 Israel Road, S.W.Tumwater, WA 98501</span></p>
+                            </div>
+                            <div class="block">
+                                <p>Email:</p>
+                                <p><span contenteditable="true">georgeslipski@hyperledger-qai.io</span></p>
+                            </div>
+                        </div>
+                        <div class="table_content-2">
+                            <div class="block">
+                                <p>Last Name:</p>
+                                <p><span contenteditable="true">Slipski</span></p>
+                            </div>
+                            <div class="block empty">
+                                <p></p>
+                                <p><span class="empty">Empty</span></p>
+                            </div>
+                            <div class="block">
+                                <p> Company:</p>
+                                <p><span contenteditable="true">Hyperledger Foundation</span></p>
+                            </div>
+                            <div class="block empty">
+                                <p></p>
+                                <p><span class="empty">Empty</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block_1 contact">
+                    <h2><span>Client</span> contact</h2>
+                    <div class="table">
+                        <div class="table_content-1">
+                            <div class="block">
+                                <p>First Name:</p>
+                                <p><span contenteditable="true">First Name</span></p>
+                            </div>
+                            <div class="block">
+                                <p>Address:</p>
+                                <p><span contenteditable="true">Address</span></p>
+                            </div>
+                            <div class="block">
+                                <p>Phone:</p>
+                                <p><span contenteditable="true">Phone</span></p>
+                            </div>
+                            <!--                            <div class="block">-->
+                            <!--                                <p>Email:</p>-->
+                            <!--                                <p><span contenteditable="true"></span></p>-->
+                            <!--                            </div>-->
+                        </div>
+                        <div class="table_content-2">
+                            <div class="block">
+                                <p>Last Name:</p>
+                                <p><span contenteditable="true">Last Name</span></p>
+                            </div>
+                            <div class="block empty">
+                                <p></p>
+                                <p><span class="empty">Empty</span></p>
+                            </div>
+                            <div class="block">
+                                <p>Case number:</p>
+                                <p><span contenteditable="true">Case number</span></p>
+                            </div>
+                            <!--                            <div class="block empty">-->
+                            <!--                                <p></p>-->
+                            <!--                                <p><span class="empty">Empty</span></p>-->
+                            <!--                            </div>-->
+                        </div>
+                    </div>
+                </div>
+                <div style="display:none;" class="code">
+                    <img src="images/code_1.png" alt="code">
+                </div>
+                <div contenteditable="true" class="editor">
+                    <p>
+                        <span>
+                            3045022100be064f08bcfd0abf96243612f095a1ac6172ec41ddae5a0921506560e948cc3a0220572847470ec72861e3fe3d7f1db8c9a74a1258f605a140dfff200dc11ad5e81c01,02a13
+                            <br>
+                            e03db9140b06c1b8d391705954e5664beb53cce6f76751698ea38f42f9012
+                        </span>
+                    </p>
+                    <p>
+                        <span class="blue-light">
+                            54.610
+                        </span>
+                        <span>
+                            sat/vByte
+                        </span>
+                    </p>
+                    <p>
+                        BTC Price
+                    </p>
+                    <p>
+                        <span class="blue-light">
+                            $70,524.74
+                        </span>
+                    </p>
+                    <p>
+                        <span class="space-empty"></span>
+                        <span class="green">
+                            "txid": "896139ea636f6e3008dddde80fe66e62388fc1dd186be0f0779cbb04f139fc58",
+                        </span>
+
+                    </p>
+                    <p>
+                        <span class="space-empty"></span>
+                        <span class="green">
+                            "size"
+                        </span>
+                        <span>
+                            :
+                        </span>
+                        <span class="blue-light">
+                            222
+                        </span>
+                        <span>
+                            ,
+                        </span>
+                    </p>
+                    <p>
+                        <span class="space-empty"></span>
+                        <span class="green">
+                            "version"
+                        </span>
+                        <span>
+                            :
+                        </span>
+                        <span class="blue-light">
+                            1
+                        </span>
+                        <span>
+                            ,
+                        </span>
+                    </p>
+                    <p>
+                        <span class="space-empty"></span>
+                        <span class="green">
+                            "locktime"
+                        </span>
+                        <span>
+                            :
+                        </span>
+                        <span class="blue-light">
+                            0
+                        </span>
+                        <span>
+                            ,
+                        </span>
+                    </p>
+                    <p>
+                        <span class="space-empty"></span>
+                        <span class="green">
+                            "fee"
+                        </span>
+                        <span>
+                            :
+                        </span>
+                        <span class="blue-light">
+                            7700
+                        </span>
+                        <span>
+                            ,
+                        </span>
+                    </p>
+                    <p>
+                        <span class="space-empty"></span>
+                        <span class="green">
+                            "inputs"
+                        </span>
+                        <span>
+                            :
+                        </span>
+                        <span>
+                            [
+                        </span>
+                    </p>
+                    <p>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span>
+                            {
+                        </span>
+                    </p>
+                    <p>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span>
+                            :
+                        </span>
+                        <span class="brown">
+                            false
+                        </span>
+                        <span>
+                            ,
+                        </span>
+                    </p>
+                    <p>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="green">
+                            "txid": "896139ea636f6e3008dddde80fe66e62388fc1dd186be0f0779cbb04f139fc58",
+                        </span>
+                    </p>
+                    <p>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="green">
+                            "output"
+                        </span>
+                        <span>
+                            :
+                        </span>
+                        <span>
+                            6/11/2023
+                        </span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="blue-light">
+                            0.202614006049883
+                        </span>
+                        <span>
+                            BTC
+                        </span>
+                    </p>
+                    <p>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span>
+                            6/12/2023
+                        </span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="blue-light">
+                            0.1710526315789474
+                        </span>
+                        <span>
+                            BTC
+                        </span>
+                    </p>
+                    <p>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span>
+                            18/12/2023
+                        </span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="blue-light">
+                            0.1407674816568602
+                        </span>
+                        <span>
+                            BTC
+                        </span>
+                    </p>
+                    <p>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span>
+                            10/1/2024
+                        </span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="blue-light">
+                            0.157627227690922
+                        </span>
+                        <span>
+                            BTC
+                        </span>
+                    </p>
+                    <p>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span>
+                            26/2/2024
+                        </span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="blue-light">
+                            0.0948710890907423
+                        </span>
+                        <span>
+                            BTC
+                        </span>
+                    </p>
+                    <p>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span>
+                            14/3/2024
+                        </span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="blue-light">
+                            0.0764004650706711
+                        </span>
+                        <span>
+                            BTC
+                        </span>
+                    </p>
+                    <p>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span>
+                            21/3/2024
+                        </span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="blue-light">
+                            0.1505579897103949
+                        </span>
+                        <span>
+                            BTC
+                        </span>
+                    </p>
+                    <p>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span>
+                            10/4/2024
+                        </span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="blue-light">
+                           0.0908357169154088
+                        </span>
+                        <span>
+                            BTC
+                        </span>
+                    </p>
+                    <p>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="green">
+                            "sigscript"
+                        </span>
+                        <span>
+                            :
+                        </span>
+                        <span>
+                            ""
+                        </span>
+                        <span>
+                            ,
+                        </span>
+                    </p>
+                    <p>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="green">
+                            "sequence"
+                        </span>
+                        <span>
+                            :
+                        </span>
+                        <span class="blue-light">
+                           4294967295
+                        </span>
+                        <span>
+                            ,
+                        </span>
+                    </p>
+                    <p>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="green">
+                            "pkscript"
+                        </span>
+                        <span>
+                            :
+                        </span>
+                        <span class="blue-light">
+                            "0014508b9a86dcecb868be5a09267ccf5c5c61bb138c"
+                        </span>
+                        <span>
+                            ,
+                        </span>
+                    </p>
+                    <p>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="green">
+                            "value"
+                        </span>
+                        <span>
+                            :
+                        </span>
+                        <span class="blue-light">
+                            2490950
+                        </span>
+                        <span>
+                            ,
+                        </span>
+                    </p>
+                    <p>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="green">
+                           "address"
+                        </span>
+                        <span>
+                            :
+                        </span>
+                        <span class="blue-light">
+                            "bc1q2z9e4pkuajux30j6pyn8en6ut3smkyu3####"
+                        </span>
+                        <span>
+                            ,
+                        </span>
+                    </p>
+                    <p>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="green">
+                           "witness"
+                        </span>
+                        <span>
+                            :
+                        </span>
+                        <span>
+                           [
+                        </span>
+                    </p>
+                    <p>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="green">
+                            "3044022015545da5572d781ea30fb524f41b3de1624bf1c39d2330791da24df5060e44f7022037c8bce9af8484657143a7b8952c9b4f0fc683507e331fa5aa48e593b438d9d401"
+                        </span>
+                        <span>
+                            ,
+                        </span>
+                    </p>
+                    <p>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="green">
+                            "02203cc81e3aea2f1d579e64f3be1308965e2560905679dbae9c272b24ddd8fd40"
+                        </span>
+                    </p>
+                    <p>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span>
+                            ]
+                        </span>
+                    </p>
+                    <p>
+                        <span class="space-empty"></span>
+                        <span>
+                            }
+                        </span>
+                        <span>
+                            fee
+                        </span>
+                        <span class="blue-light">
+                            0.272715759546
+                        </span>
+                        <span>
+                            BTC
+                        </span>
+                    </p>
+                    <p>
+                        <span>
+                            ]
+                        </span>
+                        <span>
+                            ,
+                        </span>
+                    </p>
+                    <p>
+                        <span class="green">
+                            "outputs"
+                        </span>
+                        <span>
+                            :
+                        </span>
+                        <span>
+                            [
+                        </span>
+                    </p>
+                    <p>
+                        <span class="space-empty"></span>
+                        <span>
+                            {
+                        </span>
+                    </p>
+                    <p>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="green">
+                            "address"
+                        </span>
+                        <span>
+                            :
+                        </span>
+                        <span class="green">
+                            "bc1q9l47tzggwhwyx32qhhd99ucv6sz2j####"
+                        </span>
+                        <span>
+                            ,
+                        </span>
+                    </p>
+                    <p>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="green">
+                           "pkscript"
+                        </span>
+                        <span>
+                            :
+                        </span>
+                        <span class="green">
+                            "00142febe5890875dc434540bdda52f30cd404a90cad"
+                        </span>
+                        <span>
+                            ,
+                        </span>
+                    </p>
+                    <p>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="green">
+                           "value"
+                        </span>
+                        <span>
+                            :
+                        </span>
+                        <span class="blue-light">
+                            21246
+                        </span>
+                        <span>
+                            ,
+                        </span>
+                    </p>
+                    <p>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="green">
+                           "spent"
+                        </span>
+                        <span>
+                            :
+                        </span>
+                        <span class="brown">
+                           false
+                        </span>
+                        <span>
+                            ,
+                        </span>
+                    </p>
+                    <p>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="green">
+                           "spender"
+                        </span>
+                        <span>
+                            :
+                        </span>
+                        <span class="brown">
+                          null
+                        </span>
+                    </p>
+                    <p>
+                        <span class="space-empty"></span>
+                        <span>
+                            }
+                        </span>
+                        <span>
+                            ,
+                        </span>
+                    </p>
+                    <p>
+                        <span>
+                            {
+                        </span>
+                    </p>
+                    <p>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="green">
+                            "address"
+                        </span>
+                        <span>
+                            :
+                        </span>
+                        <span class="green">
+                            "bc1qwf708mdjsqrr4v6pg0lqv98t8mw####"
+                        </span>
+                        <span>
+                            ,
+                        </span>
+                    </p>
+                    <p>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="green">
+                           "pkscript"
+                        </span>
+                        <span>
+                            :
+                        </span>
+                        <span class="green">
+                            "0014727cf3edb280063ab34143fe0614eb3edd3dbaab"
+                        </span>
+                        <span>
+                            ,
+                        </span>
+                    </p>
+                    <p>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="green">
+                           "value"
+                        </span>
+                        <span>
+                            :
+                        </span>
+                        <span class="blue-light">
+                            2462004
+                        </span>
+                        <span>
+                            ,
+                        </span>
+                    </p>
+                    <p>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="green">
+                           "spent"
+                        </span>
+                        <span>
+                            :
+                        </span>
+                        <span class="brown">
+                           false
+                        </span>
+                        <span>
+                            ,
+                        </span>
+                    </p>
+                    <p>
+                        <span class="space-empty"></span>
+                        <span class="space-empty"></span>
+                        <span class="green">
+                           "spender"
+                        </span>
+                        <span>
+                            :
+                        </span>
+                        <span class="brown">
+                          null
+                        </span>
+                    </p>
+                    <p>
+                        <span class="space-empty"></span>
+                        <span>
+                            }
+                        </span>
+                    </p>
+                    <p>
+                        <span>
+                            ]
+                        </span>
+                        <span>
+                            ,
+                        </span>
+                    </p>
+                    <p>
+                        <span class="green">
+                            "block"
+                        </span>
+                        <span>
+                            :
+                        </span>
+                        <span>
+                            {
+                        </span>
+                    </p>
+                    <p>
+                        <span class="space-empty"></span>
+                        <span class="green">
+                            "mempool"
+                        </span>
+                        <span>
+                            :
+                        </span>
+                        <span class="blue-light">
+                            1712648788
+                        </span>
+                    </p>
+                    <p>
+                        <span>
+                            }
+                        </span>
+                        <span>
+                            ,
+                        </span>
+                    </p>
+                    <p>
+                        <span class="green">
+                            "deleted",
+                        </span>
+                        <span>
+                            :
+                        </span>
+                        <span class="brown">
+                           false
+                        </span>
+                    </p>
+                    <p>
+                        <span class="green">
+                            "time"
+                        </span>
+                        <span>
+                            :
+                        </span>
+                        <span class="blue-light">
+                            1712648788
+                        </span>
+                        <span>
+                            ,
+                        </span>
+                    </p>
+                    <p>
+                        <span class="green">
+                           "rbf"
+                        </span>
+                        <span>
+                            :
+                        </span>
+                        <span class="brown">
+                           false
+                        </span>
+                        <span>
+                            ,
+                        </span>
+                    </p>
+                    <p>
+                        <span class="green">
+                            "weight"
+                        </span>
+                        <span>
+                            :
+                        </span>
+                        <span class="blue-light">
+                           561
+                        </span>
+                    </p>
+                    <p>
+                        <span>
+                            }
+                        </span>
+                    </p>
+
+                    <!--       <p>
+                               <span class="number">1</span>
+                               <span class="tab">&#183;</span>
+                               <span><</span>value=
+                               <span class="number">4.18</span>
+
+                           </p>
+                           <p>
+                               <span class="number">2</span>
+                               <span class="tab">&#183;</span>
+                               <span class="purple"> pragma </span>
+                               <span class="blue">Hyperledger solidity</span>
+                               <span class="red">}</span>
+                               0.4.18;
+                           </p>
+                           <p>
+                               <span class="number">3</span>
+                               <span class="tab">&#183;</span>
+                               smart
+                               <span class="blue">contract</span>
+                               <span class="yellow">{</span>
+                               <span contenteditable="true">Deacon-Ignatius Zarif</span>
+                           </p>
+                           <p>
+                               <span class="number">4</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="blue">function</span>
+                               <span class="beige">set</span>
+                               <span class="purple">(</span>
+                               <span class="blue-light">unit_value</span>
+                               <span class="purple">)</span>
+                               <span class="blue">public</span>
+                               <span class="purple">{</span>
+                               Quad split bilateral fee
+
+                           </p>
+                           <p>
+                               <span class="number">5</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               value=_value;
+                           </p>
+                           <p>
+                               <span class="number">6</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="purple">}</span>
+                           </p>
+                           <p>
+                               <span class="number">7</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                           </p>
+                           <p>
+                               <span class="number">8</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="blue">function</span>
+                               <span class="beige">get</span>
+                               <span class="purple">(</span>
+                               <span class="blue">Payout</span>
+                               <span class="blue-light">executed to </span>
+                               <span class="blue">Hyperledger</span>
+                               <span class="blue-light">using llvm for and</span>
+                               <span class="purple">)</span>
+                               <span class="blue">public</span>
+                               <span class="beige">constant</span>
+                               <span class="purple">returns</span>
+                               <span class="purple">(</span>
+                               <span class="blue-light">unit</span>
+                               <span class="purple">)</span>
+                               <span class="purple">{</span>
+
+                           </p>
+                           <p>
+                               <span class="number">9</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="purple">return</span>
+                               value;</p>
+                           <p>
+                               <span class="number">10</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="purple">}</span>
+                           </p>
+                           <p>
+                               <span class="number">11</span>
+                               <span class="tab">&#183;</span>
+                               unit value executed amount is value=value;
+                               <span class="yellow">}</span>
+                               total payout
+                               <span class="number" contenteditable="true"> 39,989.00 USD</span>
+                           </p>
+                           <p>
+                               <span class="number">12</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               only Rcipient
+                           </p>
+                           <p>
+                               <span class="number">13</span>
+                               <span class="tab">&#183;</span>
+                               <span class="beige">inState</span>
+                               <span class="yellow">(</span>
+                               State.Created
+                               <span class="red">}</span>
+                               <span contenteditable="true">AU</span>
+                               ;
+                               <span class="yellow">)</span>
+                           </p>
+                           <p>
+                               <span class="number">14</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="yellow">{</span>
+                           </p>
+                           <p>
+                               <span class="number">15</span>
+                           </p>
+                           <p>
+                               <span class="number">16</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                           </p>
+                           <p>
+                               <span class="number">17</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               executed
+                               <span class="yellow">}</span>
+                           </p>
+                           <p>
+                               <span class="number">18</span>
+                               <span class="tab">&#183;</span>
+                               sender.
+                               <span contenteditable="true">transfer ERC20 VSCC
+                                   <span class="number"> 23.3</span>
+                                   ETH
+                               </span>
+                           </p>
+                           <p>
+                               <span class="number">19</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               .
+                               <span class="tab">&#183;</span>
+                               <span class="blue">function</span>
+                               <span class="beige">confirmTransfer</span>
+                               <span class="yellow">(</span>
+                               <span class="yellow">)</span>
+                           </p>
+                           <p>
+                               <span class="number">20</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               \\\\\\\
+                           </p>
+                           <p>
+                               <span class="number">21</span>
+                           </p>
+                           <p>
+                               <span class="number">22</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="yellow">{</span>
+                               <span class="blue">payable</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="red">}</span>
+                           </p>
+                           <p>
+                               <span class="number">23</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="yellow">{</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               transaction cell
+                               <span class="green">/////</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                           </p>
+                           <p>
+                               <span class="number">24</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               fee
+                               <span contenteditable="true">
+                                   <span class="number">3,998.00</span>
+                               USD
+                               </span>
+                               !
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="yellow">}</span>
+                           </p>
+                           <p>
+                               <span class="number">25</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="green">//// This will release the locked ether.</span>
+                           </p>
+                           <p>
+                               <span class="number">26</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="green">//// Confirm received item</span>
+                           </p>
+                           <p>
+                               <span class="number">27</span>
+                               <span class="tab">&#183;</span>
+                               <span class="blue">function</span>
+                               <span class="beige">confirmReceoved</span>
+                               <span class="yellow">(</span>
+                               <span class="yellow">)</span>
+                           </p>
+                           <p>
+                               <span class="number">28</span>
+                               <span class="tab">&#183;</span>
+                               <span class="beige">senderData</span>
+                               =
+                               <span class="beige"> new memo </span>
+                               <span class="yellow">(</span>
+                               <span class="yellow">)</span>
+                               <span class="red">}</span>
+                               <span class="beige">sender</span>
+                               ,
+                               <span class="beige">sender</span>=<span class="beige">name</span>
+                               ,
+                               <span class="beige">senderWalletAmount</span>
+                               ,
+                               <span class="beige">senderWalletCurrency</span>
+                               };
+                           </p>
+                           <p>
+                               <span class="number">29</span>
+                               <span class="tab">&#183;</span>
+                               <span class="green">//</span>
+                               <span class="blue"> Note:</span>
+                               <span class="green">This actuallty allows both the recipient and sender to</span>
+                           </p>
+                           <p>
+                               <span class="number">30</span>
+                               <span class="tab">&#183;</span>
+                               /
+                               <span class="blue"> block</span>
+                               the refund - the withdraw pafttern should be used.
+                           </p>
+                           <p>
+                               <span class="number">31</span>
+                               <span class="tab">&#183;</span>
+                               <span class="tab">&#183;</span>
+                               <span class="blue">function</span>
+                               <span class="beige">set</span>
+                               <span class="yellow">(</span>
+                               <span class="blue-light">unit_value</span>
+                               <span class="yellow">)</span>
+                               <span class="blue">public</span>
+                           </p>-->
+
+
+                </div>
+                <div class="block_1 report_submission">
+                    <h3>report submission</h3>
+                    <p>
+                        Post: State of Washington - Department of Financial Institutions Division of Consumer
+                    </p>
+                    <p>150 Israel Road, S.W.Tumwater, WA 98501</p>
+                    <p>
+                        Email: support@atomic-hyperledger.com
+                    </p>
+                </div>
+                <div class="block_1 link">
+                    <p>
+                    <span contenteditable="true">
+                        www.hyperledger.org
+                    </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="background">
+            <img src="images/a4_2.png" alt="banner" width="100%">
+        </div>
+    </div>
+    <div class="page page_3" id="page3">
+        <div class="page_content-wrap">
+            <div class="page_content">
+                <div class="code">
+                    <img src="images/code.png" alt="code">
+                </div>
+                <div class="block_1 link">
+                    <p>
+                    <span contenteditable="true">
+                        www.hyperledger.org
+                    </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="background">
+            <img src="images/a4_2.png" alt="banner" width="100%">
+        </div>
+    </div>
+</div>
+<button class="save" onclick="saveAsPDF()">Save as PDF</button>
+
+</body>
+</html>
