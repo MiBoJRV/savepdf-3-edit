@@ -1,4 +1,69 @@
 @charset "UTF-8";
+/*Fonts*/
+@font-face {
+  font-family: "Arial";
+  src: url("fonts/Arial-ItalicMT.eot");
+  src: local("Arial Italic"), local("Arial-ItalicMT"), url("fonts/Arial-ItalicMT.eot?#iefix") format("embedded-opentype"), url("fonts/Arial-ItalicMT.woff2") format("woff2"), url("fonts/Arial-ItalicMT.woff") format("woff"), url("fonts/Arial-ItalicMT.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Arial";
+  src: url("fonts/ArialMT.eot");
+  src: local("Arial"), local("ArialMT"), url("fonts/ArialMT.eot?#iefix") format("embedded-opentype"), url("fonts/ArialMT.woff2") format("woff2"), url("fonts/ArialMT.woff") format("woff"), url("fonts/ArialMT.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Arial";
+  src: url("fonts/Arial-BoldItalicMT.eot");
+  src: local("Arial Bold Italic"), local("Arial-BoldItalicMT"), url("fonts/Arial-BoldItalicMT.eot?#iefix") format("embedded-opentype"), url("fonts/Arial-BoldItalicMT.woff2") format("woff2"), url("fonts/Arial-BoldItalicMT.woff") format("woff"), url("fonts/Arial-BoldItalicMT.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Arial Narrow";
+  src: url("fonts/ArialNarrow-BoldItalic.eot");
+  src: local("Arial Narrow Bold Italic"), local("ArialNarrow-BoldItalic"), url("fonts/ArialNarrow-BoldItalic.eot?#iefix") format("embedded-opentype"), url("fonts/ArialNarrow-BoldItalic.woff2") format("woff2"), url("fonts/ArialNarrow-BoldItalic.woff") format("woff"), url("fonts/ArialNarrow-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Arial Narrow";
+  src: url("fonts/ArialNarrow-Bold.eot");
+  src: local("Arial Narrow Bold"), local("ArialNarrow-Bold"), url("fonts/ArialNarrow-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/ArialNarrow-Bold.woff2") format("woff2"), url("fonts/ArialNarrow-Bold.woff") format("woff"), url("fonts/ArialNarrow-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Arial Narrow";
+  src: url("fonts/ArialNarrow-Italic.eot");
+  src: local("Arial Narrow Italic"), local("ArialNarrow-Italic"), url("fonts/ArialNarrow-Italic.eot?#iefix") format("embedded-opentype"), url("fonts/ArialNarrow-Italic.woff2") format("woff2"), url("fonts/ArialNarrow-Italic.woff") format("woff"), url("fonts/ArialNarrow-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Arial Narrow";
+  src: url("fonts/ArialNarrow.eot");
+  src: local("Arial Narrow"), local("ArialNarrow"), url("fonts/ArialNarrow.eot?#iefix") format("embedded-opentype"), url("fonts/ArialNarrow.woff2") format("woff2"), url("fonts/ArialNarrow.woff") format("woff"), url("fonts/ArialNarrow.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Arial";
+  src: url("fonts/Arial-BoldMT.eot");
+  src: local("Arial Bold"), local("Arial-BoldMT"), url("fonts/Arial-BoldMT.eot?#iefix") format("embedded-opentype"), url("fonts/Arial-BoldMT.woff2") format("woff2"), url("fonts/Arial-BoldMT.woff") format("woff"), url("fonts/Arial-BoldMT.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Arial";
+  src: url("fonts/Arial-Black.eot");
+  src: local("Arial Black"), local("ArialBlack"), url("fonts/Arial-Black.eot?#iefix") format("embedded-opentype"), url("fonts/Arial-Black.woff2") format("woff2"), url("fonts/Arial-Black.woff") format("woff"), url("fonts/Arial-Black.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+/*Fonts*/
 * {
   margin: 0;
   padding: 0;
@@ -67,6 +132,59 @@ button.save {
   margin-bottom: 20px;
   height: 1630px;
   page-break-before: always;
+}
+.content .main_page {
+  background: #2B2727;
+  position: relative;
+}
+.content .main_page .text-image {
+  position: absolute;
+  top: 76px;
+  left: 55px;
+}
+.content .main_page h1 {
+  position: absolute;
+  top: 76px;
+  left: 55px;
+  max-height: 1477px;
+  height: 100%;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  white-space: nowrap;
+  color: #000;
+  font-size: 169px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 6.76px;
+  text-transform: uppercase;
+  text-align: right;
+}
+.content .main_page h1 span {
+  color: #000;
+  font-size: 128px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 5.12px;
+  text-transform: uppercase;
+  margin-left: -28px;
+  display: block;
+}
+.content .main_page h2 {
+  color: #FFF;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: uppercase;
+  margin: 428px 78px 0 auto;
+  max-width: 403px;
+  width: 100%;
+}
+.content .main_page .logo {
+  padding: 483px 104px 0 0;
+  text-align: right;
 }
 .content .page_1 {
   page-break-inside: avoid;
